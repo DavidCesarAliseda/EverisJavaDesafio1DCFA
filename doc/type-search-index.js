@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"variables","l":"Developer"},{"p":"fpdualeveris","l":"FPDual"},{"p":"variables","l":"Speciality"}];updateSearchResults();
