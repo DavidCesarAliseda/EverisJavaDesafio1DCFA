@@ -97,25 +97,29 @@ public class Developer {
     public void setSpeciality(Speciality speciality) {
         this.speciality = speciality;
     }
+    
 
-    @Override
-    public String toString() {
-        String resul;
+    public StringBuilder toStringBuilder() {
+        StringBuilder strResult = new StringBuilder();
         if (speciality == null) {
-            resul="Developer{" +
-                    "employeeId=" + employeeId +
-                    ", holidaysDays=" + holidaysDays +
-                    ", name='" + name +
-                    '}';
+        	strResult.append("Developer: employeeId=");
+        	strResult.append(employeeId);
+        	strResult.append(", holidaysDays=");
+        	strResult.append(holidaysDays);
+        	strResult.append(", name=");
+        	strResult.append(name);
+            
         }else{
-            resul="Developer{" +
-                    "employeeId=" + employeeId +
-                    ", holidaysDays=" + holidaysDays +
-                    ", name='" + name + '\'' +
-                    ", speciality=" + speciality +
-                    '}';
+        	strResult.append("Developer: employeeId=");
+        	strResult.append(employeeId);
+        	strResult.append(", holidaysDays=");
+        	strResult.append(holidaysDays);
+        	strResult.append(", name=");
+        	strResult.append(name);
+        	strResult.append(", speciality=");
+        	strResult.append(speciality);
         }
-        return resul;
+        return strResult;
     }
     /**
      * Metodo para descontar dias de vacaciones de un developer
