@@ -1,7 +1,7 @@
 package variables;
 /**
  * Clase de tipo enum que contiene las posibles especialidades de un developer
- * @author David César Fernandez Aliseda
+ * @author David César Fernández Aliseda
  * @version 23/05/21/A
  */
 public enum Speciality {

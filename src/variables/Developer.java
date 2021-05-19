@@ -1,7 +1,7 @@
 package variables;
 /**
  * Esta clase define el objeto Developer el cual representa un desarrollador que trabaja para la empresa Everis
- * @author David César Fernandez Aliseda
+ * @author David César Fernández Aliseda
  * @version 23/05/21/A
  */
 public class Developer {
@@ -98,31 +98,34 @@ public class Developer {
         this.speciality = speciality;
     }
     
-
+    /**
+     * Método para obtener toda la información de un developer 
+     * @return cadena con la información
+     */
     public StringBuilder toStringBuilder() {
         StringBuilder strResult = new StringBuilder();
         if (speciality == null) {
-        	strResult.append("Developer: employeeId=");
+        	strResult.append("Developer: employeeId: ");
         	strResult.append(employeeId);
-        	strResult.append(", holidaysDays=");
+        	strResult.append(", holidaysDays: ");
         	strResult.append(holidaysDays);
-        	strResult.append(", name=");
+        	strResult.append(", name: ");
         	strResult.append(name);
             
         }else{
-        	strResult.append("Developer: employeeId=");
+        	strResult.append("Developer: employeeId: ");
         	strResult.append(employeeId);
-        	strResult.append(", holidaysDays=");
+        	strResult.append(", holidaysDays: ");
         	strResult.append(holidaysDays);
-        	strResult.append(", name=");
+        	strResult.append(", name: ");
         	strResult.append(name);
-        	strResult.append(", speciality=");
+        	strResult.append(", speciality: ");
         	strResult.append(speciality);
         }
         return strResult;
     }
     /**
-     * Metodo para descontar dias de vacaciones de un developer
+     * Método para descontar dias de vacaciones de un developer
      * @param num El parametro representa los dias de vacaciones a descontar
      */
     public void decreaseHolidays(int num){
@@ -134,7 +137,7 @@ public class Developer {
         }
     }
     /**
-     * Metodo para cambiar la especialidad de un developer
+     * Método para cambiar la especialidad de un developer
      * @param newSpeciality Representa la nueva especialidad del developer
      */
     public void changeSpeciality(Speciality newSpeciality){
@@ -143,7 +146,7 @@ public class Developer {
     }
     
     /**
-     * Metodo para dar una especialidad a un developer
+     * Método para dar una especialidad a un developer
      * @param newSpeciality Representa la especialidad del developer
      */
     public void giveSpeciality(Speciality newSpeciality){

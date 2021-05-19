@@ -5,7 +5,7 @@ import variables.Speciality;
 
 /**
  * Clase principal donde se ejecuta el programa.
- * @author David Cesar Fernandez Aliseda
+ * @author David César Fernández Aliseda
  */
 
 public class FPDual {
@@ -13,7 +13,7 @@ public class FPDual {
         variablesChallenge();
     }
 	/**
-	 * Metodo para ejecutar el programa.
+	 * Método para ejecutar el programa.
 	 */
     private static void variablesChallenge(){
         //Obtener el nombre de la empresa
